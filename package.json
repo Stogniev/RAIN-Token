@@ -1,0 +1,24 @@
+{
+  "name": "rainmaker",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "migrate-rinkeby": "truffle migrate --network rinkeby --reset --compile-all -f 2 --to 2",
+    "verify-rinkeby": "truffle run verify Rainmaker --network rinkeby",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.6.8",
+    "truffle-plugin-verify": "^0.5.18"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "truffle": "^5.4.21"
+  }
+}
